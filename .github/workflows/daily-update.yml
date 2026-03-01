@@ -1,0 +1,34 @@
+name: Daily Repository Update
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 🔥 This is the fix
+
+jobs:
+  daily-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@github.com"
+
+      - name: Automated update step - 24f2007364@ds.study.iitm.ac.in
+        run: |
+          echo "Last updated on $(date -u)" >> daily-log.txt
+
+      - name: Commit and Push
+        run: |
+          git add daily-log.txt
+          git commit -m "Automated daily update: $(date -u)" || echo "No changes to commit"
+          git push
