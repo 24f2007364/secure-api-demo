@@ -1,0 +1,7 @@
+{
+  "prompt": "A stark, cinematic photograph of exactly 7 well-worn, wooden industrial factory worker stools lined up perfectly evenly against a bare concrete wall. The stools represent a measurable dataset. Exactly 1 of the 7 stools on the far left has been violently sheared apart and replaced by a sterile, sleek, glowing white robotic armature. The next 2 stools in the line are still wooden but have been heavily, uncomfortably retrofitted with cold metal clamps, screens, and wires. The remaining 4 stools on the right are completely untouched, showing only the human patina of daily use. Dramatic, directional lighting casts long, distinct shadows for each of the 7 stools, emphasizing the exact count. No text, no labels, no traditional charts, hyper-realistic, medium format photography. --ar 16:9 --style raw --v 6.1",
+  "model": "Midjourney v6.1",
+  "dataset_name": "OECD Policy Brief on the Future of Work: Putting faces to the jobs at risk of automation",
+  "dataset_url": "http://www.oecd.org/els/emp/future-of-work/Automation-policy-brief-2018.pdf",
+  "insight": "While exactly one in seven jobs may be entirely lost to automation, nearly a third will undergo severe, substantial changes in how they are carried out."
+}
